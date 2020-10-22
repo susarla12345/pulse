@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('pulse', { path: '/' });
+  this.route('feedback', { path: '/feedback' })
+  this.route('metrics', { path: '/metrics' })
+  this.route('impact', { path: 'impact/' })
 });
 
 export default Router;

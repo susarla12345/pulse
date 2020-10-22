@@ -1,0 +1,27 @@
+{{log activeTab}}
+<div class="navbar-wrapper">
+    <div class="options options--left">
+        {{#each tabs as |tab|}}
+            {{#link-to tab.route class=(concat 'tab ' tab.name)}}
+                {{tab.name}}
+             {{/link-to}}
+
+             {{#if tab.beta}}
+                <span class="beta-tag">
+                    beta
+                </span>
+             {{/if}}
+        {{/each}}
+    </div>
+
+    <div class="options options--right">
+        <div class="tab tab--notifications">
+            Notifications
+        </div>
+
+        <div class="tab tab--profiles">
+            Profile
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,41 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #2c5cc5;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0 16px;
+    position: fixed;
+
+    .tab {
+        margin: 0 16px;
+        color: #fff;
+        text-decoration: none;
+
+        &.active {
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+        }
+
+        &:hover {
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+            text-decoration: none; 
+        }
+    }
+
+    .beta-tag {
+        background: #02b875;
+        padding: 0px 8px;
+        color: white;
+        font-size: 14px;
+        height: 17px;
+        margin-left: -10px;
+    }
+
+    .options {
+        display: flex;
+    }
+}
